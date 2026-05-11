@@ -1,0 +1,15 @@
+App name
+EMERA LE VAL FLEURY
+
+Short description
+Manage bookings, visitors, revenue, and tasks in a private offline operations workspace.
+
+Full description
+EMERA LE VAL FLEURY gives front desk and operations teams a focused Android workspace for the daily work that needs fast follow-through: appointment booking, visitor status, revenue review, and task ownership.
+
+Create local bookings, register expected visitors, check arrivals in and out, monitor booked and collected revenue, and keep action items visible through a practical task board. The app is built for repeated daily use with clear status labels and fast navigation between operational areas.
+
+All records stay on the device. There is no account, cloud sync, analytics, advertising, or network feature.
+
+Category
+Business

@@ -1,0 +1,31 @@
+name: emera_val_fleury
+description: "Offline operations workspace for EMERA LE VAL FLEURY."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.11.5
+
+dependencies:
+  flutter:
+    sdk: flutter
+  shared_preferences: ^2.5.5
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  flutter_launcher_icons: ^0.14.4
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/brand/featured.png
+    - assets/brand/icon.png
+
+flutter_launcher_icons:
+  android: true
+  ios: false
+  image_path: docs/icon.png
+  min_sdk_android: 23

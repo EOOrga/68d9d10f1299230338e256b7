@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EMERA LE VAL FLEURY</title>
+  <meta name="description" content="Offline operations workspace for appointment booking, visitor management, revenue analytics, and task management.">
+  <link rel="icon" href="favicon.png">
+  <link rel="manifest" href="manifest.json">
+  <style>
+    :root {
+      --navy: #00122c;
+      --blue: #003060;
+      --gold: #d09020;
+      --teal: #1d7a78;
+      --ivory: #fbf8f1;
+      --paper: #ffffff;
+      --ink: #142033;
+      --muted: #596373;
+      color-scheme: light;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--ivory);
+      color: var(--ink);
+      line-height: 1.5;
+    }
+    a { color: inherit; }
+    .shell { min-height: 100vh; display: flex; flex-direction: column; }
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: rgba(251, 248, 241, .94);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid rgba(0, 18, 44, .08);
+    }
+    .nav, .section {
+      width: min(1120px, calc(100% - 32px));
+      margin: 0 auto;
+    }
+    .nav {
+      min-height: 68px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+    .brand { display: flex; align-items: center; gap: 12px; font-weight: 800; color: var(--navy); }
+    .brand img { width: 42px; height: 42px; border-radius: 8px; }
+    .nav a {
+      text-decoration: none;
+      font-weight: 700;
+      color: var(--blue);
+    }
+    .hero {
+      min-height: 72vh;
+      display: grid;
+      align-items: end;
+      background:
+        linear-gradient(90deg, rgba(0,18,44,.94), rgba(0,18,44,.50), rgba(0,18,44,.12)),
+        url("featured.png") center/cover no-repeat;
+      color: white;
+    }
+    .hero .section { padding: 96px 0 72px; }
+    .eyebrow {
+      display: inline-flex;
+      padding: 7px 11px;
+      border: 1px solid rgba(255,255,255,.28);
+      border-radius: 999px;
+      background: rgba(255,255,255,.12);
+      font-size: 13px;
+      font-weight: 800;
+    }
+    h1 {
+      max-width: 780px;
+      margin: 18px 0 14px;
+      font-size: clamp(42px, 8vw, 86px);
+      line-height: .95;
+      letter-spacing: 0;
+    }
+    .hero p {
+      max-width: 650px;
+      margin: 0 0 28px;
+      color: rgba(255,255,255,.88);
+      font-size: clamp(17px, 2.5vw, 21px);
+    }
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 48px;
+      padding: 0 18px;
+      border-radius: 8px;
+      background: var(--gold);
+      color: var(--navy);
+      text-decoration: none;
+      font-weight: 900;
+    }
+    .band { padding: 54px 0; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px;
+    }
+    .card {
+      background: var(--paper);
+      border: 1px solid rgba(0,18,44,.08);
+      border-radius: 8px;
+      padding: 20px;
+      min-height: 178px;
+      box-shadow: 0 12px 32px rgba(0,18,44,.06);
+    }
+    .card strong { display: block; color: var(--navy); font-size: 18px; margin-bottom: 8px; }
+    .card span { color: var(--muted); }
+    .split {
+      display: grid;
+      grid-template-columns: 1.08fr .92fr;
+      gap: 28px;
+      align-items: center;
+    }
+    .panel {
+      background: var(--navy);
+      color: white;
+      border-radius: 8px;
+      padding: 26px;
+    }
+    .panel p { color: rgba(255,255,255,.78); }
+    .metric {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 12px;
+      padding: 14px 0;
+      border-bottom: 1px solid rgba(255,255,255,.14);
+    }
+    .metric:last-child { border-bottom: 0; }
+    .metric b { color: var(--gold); }
+    footer {
+      margin-top: auto;
+      padding: 28px 0;
+      background: var(--navy);
+      color: rgba(255,255,255,.78);
+    }
+    footer .section { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+    @media (max-width: 860px) {
+      .nav { align-items: flex-start; flex-direction: column; padding: 14px 0; }
+      .grid, .split { grid-template-columns: 1fr; }
+      .hero { min-height: 70vh; }
+      .hero .section { padding: 76px 0 46px; }
+      h1 { font-size: 46px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <header>
+      <nav class="nav" aria-label="Primary">
+        <div class="brand">
+          <img src="favicon.png" alt="">
+          <span>EMERA LE VAL FLEURY</span>
+        </div>
+        <a href="mailto:support@emeralevalfleury.com">support@emeralevalfleury.com</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="section">
+          <span class="eyebrow">Offline Android operations app</span>
+          <h1>EMERA LE VAL FLEURY</h1>
+          <p>Coordinate appointments, visitor flow, revenue follow-up, and team tasks from one private workspace designed for daily business operations.</p>
+          <a class="button" href="mailto:support@emeralevalfleury.com">Contact support</a>
+        </div>
+      </section>
+
+      <section class="band">
+        <div class="section grid">
+          <div class="card"><strong>Appointment booking</strong><span>Create service bookings, keep guest context visible, and move records from pending to confirmed or complete.</span></div>
+          <div class="card"><strong>Visitor management</strong><span>Register expected arrivals, assign badges, and track check-in or check-out state from the front desk.</span></div>
+          <div class="card"><strong>Revenue analytics</strong><span>Review booked and collected revenue with clear local totals and source-by-source status.</span></div>
+          <div class="card"><strong>Task ownership</strong><span>Keep operational action items assigned, dated, and easy to complete during the day.</span></div>
+        </div>
+      </section>
+
+      <section class="band">
+        <div class="section split">
+          <div>
+            <h2>Built for practical daily use</h2>
+            <p>EMERA LE VAL FLEURY is a focused Android app, not a web portal. It opens directly into the working dashboard and keeps common operations one tap away through dedicated booking, visitor, analytics, and task areas.</p>
+            <p>Records are stored on the device only. The app does not require an account, does not sync to a server, and does not include analytics or advertising.</p>
+          </div>
+          <div class="panel">
+            <div class="metric"><span>Records</span><b>Local only</b></div>
+            <div class="metric"><span>Account</span><b>Not required</b></div>
+            <div class="metric"><span>Network features</span><b>None</b></div>
+            <div class="metric"><span>Primary audience</span><b>Operations teams</b></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="section">
+        <span>EMERA LE VAL FLEURY</span>
+        <span>Private offline operations workspace</span>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
