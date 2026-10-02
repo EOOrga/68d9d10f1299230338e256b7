@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "applications": {
+    "com.emeralevalfleury.operations": {
+      "title": "EMERA LE VAL FLEURY",
+      "short_description": "Manage bookings, visitors, revenue, and tasks in a private offline...",
+      "full_description": "EMERA LE VAL FLEURY gives front desk and operations teams a focused Android workspace for the daily work that needs fast follow-through: appointment booking, visitor status, revenue review, and task ownership.\n\nCreate local bookings, register expected visitors, check arrivals in and out, monitor booked and collected revenue, and keep action items visible through a practical task board. The app is built for repeated daily use with clear status labels and fast navigation between operational areas.\n\nAll records stay on the device. There is no account, cloud sync, analytics, advertising, or network feature.",
+      "source_screenshots": [
+        "docs/screens/1.png",
+        "docs/screens/2.png",
+        "docs/screens/3.png"
+      ],
+      "generated_from": "existing repository listing metadata and README",
+      "generated_at": "2026-10-02T21:20:24.722948+00:00"
+    }
+  }
+}
