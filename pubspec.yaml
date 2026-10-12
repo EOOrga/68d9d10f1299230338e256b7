@@ -1,4 +1,4 @@
-name: emera_val_fleury
+name: operations
 description: "Offline operations workspace for EMERA LE VAL FLEURY."
 publish_to: 'none'
 
@@ -28,4 +28,6 @@ flutter_launcher_icons:
   android: true
   ios: false
   image_path: docs/icon.png
+  adaptive_icon_foreground: docs/icon.png
+  adaptive_icon_background: "#32FA00"
   min_sdk_android: 23
