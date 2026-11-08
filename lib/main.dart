@@ -335,7 +335,7 @@ class OperationsStore extends ChangeNotifier {
     tasks = <WorkTask>[
       WorkTask(
         id: 'task-starter',
-        title: 'Verifier les dossiers de facturation',
+        title: 'EMERA LE VAL FLEURY',
         owner: 'Administration',
         area: 'Bureau',
         due: 'Aujourd hui',
