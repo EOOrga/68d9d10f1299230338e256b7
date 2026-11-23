@@ -30,7 +30,7 @@ android {
     }
 
     defaultConfig {
-        applicationId = "com.emeralevalfleury.operations"
+        applicationId = "com.emeralevalfleury.ddankh"
         minSdk = flutter.minSdkVersion
         targetSdk = flutter.targetSdkVersion
         versionCode = flutter.versionCode
